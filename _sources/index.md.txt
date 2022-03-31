@@ -18,4 +18,7 @@ about
 faq
 blog
 communication
+best-practices
+calendar
+projects
 ```

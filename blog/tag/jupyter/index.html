@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posts tagged jupyter &#8212; NCAR-ESDS 0.1 documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.f6b7ca918bee2f46fd9abac01cfb07d5.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,31 +19,78 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.59c74d8c95b765a7fd995ac71d459ebe.min.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1e043a052b0af929e4d8.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/togglebutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "NCAR/esds");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/design-tabs.js"></script>
     <link rel="author" title="About these documents" href="../../../about/" />
     <link rel="index" title="Index" href="../../../genindex/" />
     <link rel="search" title="Search" href="../../../search/" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" /> 
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-196809533-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+ 
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -76,25 +124,34 @@
 </style>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
     <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
 
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../../../">
+<p class="title">NCAR-ESDS</p>
+</a>
 
     
-    <a class="navbar-brand" href="../../../">
-      <p class="title">NCAR-ESDS</p>
-    </a>
-    
+  </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    
-    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
-      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-        <li class="toctree-l1 nav-item">
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../../../about/">
   About Us
  </a>
@@ -118,22 +175,50 @@
  </a>
 </li>
 
-        
-      </ul>
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../best-practices/">
+  Best Practices
+ </a>
+</li>
 
-      <form class="bd-search d-flex align-items-center" action="../../../search/" method="get">
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../calendar/">
+  Calendar
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../projects/">
+  Projects
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../search/" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site... " aria-label="Search this site... " autocomplete="off" >
 </form>
-      <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/ncar/esds" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          <a class="nav-link" href="https://github.com/ncar/esds" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
+      </div>
+      
     </div>
+  </div>
 </div>
     </nav>
     
@@ -143,25 +228,25 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site... " aria-label="Search this site... " autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
     
   </div>
 </nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
 
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
-              
-
-<nav id="bd-toc-nav">
-    
-</nav>
-
-
-              
+            
           </div>
           
 
@@ -179,9 +264,141 @@
   </h1>
    
 
-  <div class="section">
-    <h2>
-      <a href="../../../posts/Interactive_Dashboard/"
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../../../posts/2022/batch-processing-notebooks-with-papermill/"
+        >Batch Processing Jupyter Notebooks with Papermill</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> 17 March 2022 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../../author/anderson-banihirwe/">Anderson Banihirwe</a>,   
+  <a href="../../author/matthew-long/">Matthew Long</a>  
+</li>
+    
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../python/">python</a>   
+  <a href="#">jupyter</a>   
+  <a href="../notebooks/">notebooks</a>   
+  <a href="../papermill/">papermill</a>   
+  <a href="../automation/">automation</a>  
+</li>
+ 
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p><a class="reference external" href="https://jupyter.org/">Jupyter notebooks</a> are really good for doing the heavy lifting of data analysis by:</p>
+<p>Allowing you to showcase your work in a single place. You can see the complete “paper trail” of what was done. This includes the code, results, visuals and the narrative accompanying your analysis.</p>
+<img alt="" src="../../../_images/papermill-parameters.png" />
+</div>
+
+    <p class="ablog-post-expand"><a href="../../../posts/2022/batch-processing-notebooks-with-papermill/"><em>Read more ...</em></a></p>
+    <hr />
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../../../posts/2021/jupyter-based-diagnostics-overview/"
+        >Reimagining Diagnostics Through the Use of the Jupyter Ecosystem</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> 24 September 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../../author/max-grover/">Max Grover</a>  
+</li>
+    
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../diagnostics/">diagnostics</a>   
+  <a href="#">jupyter</a>   
+  <a href="../intake/">intake</a>   
+  <a href="../cesm/">cesm</a>   
+  <a href="../visualization/">visualization</a>  
+</li>
+ 
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>Typically, diagnostics packages are written with following structure, using script-based workflows</p>
+<p>Read files and do some preprocessing</p>
+<img alt="cesm-marbl-book-overview" src="../../../_images/cesm_marbl_book_overview.png" />
+</div>
+
+    <p class="ablog-post-expand"><a href="../../../posts/2021/jupyter-based-diagnostics-overview/"><em>Read more ...</em></a></p>
+    <hr />
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../../../posts/2021/model_documentation_jupyterbook/"
+        >Creating Model Documentation Using Jupyterbook and Intake-esm</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> 25 June 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../../author/max-grover/">Max Grover</a>  
+</li>
+    
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="#">jupyter</a>   
+  <a href="../cesm/">cesm</a>   
+  <a href="../intake/">intake</a>   
+  <a href="../documentation/">documentation</a>  
+</li>
+ 
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>A common step to any project is documenting your data and your data workflow. Fortunately, open tools in the scientific python ecosystem make that much easier! In this example, we will cover creating your github repo, creating the catalog, visualizing the catalog, and generating a static webpage you can share with collaborators!</p>
+<p>This week’s post is quite detailed, so just a warning! If you would like to look at the finished product, check out the following</p>
+<img alt="CESM book page" src="../../../_images/cesm_book_page.png" />
+</div>
+
+    <p class="ablog-post-expand"><a href="../../../posts/2021/model_documentation_jupyterbook/"><em>Read more ...</em></a></p>
+    <hr />
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../../../posts/2021/Interactive_Dashboard/"
         >HiRes-CESM Interactive Dashboard Example</a
       >
     </h2>
@@ -209,10 +426,53 @@
 </li>
  
     </ul>
-    <p>In this example, our goal is to create an interactive dashboard, using images already output on a remote server.</p>
+    <div class="ablog-post-excerpt docutils container">
+<p>In this example, our goal is to create an interactive dashboard, using images already output on a remote server.</p>
 <p>We are specifically interested in looking at plots created using the <a class="reference external" href="https://github.com/marbl-ecosys/HiRes-CESM-analysis">HighRes-CESM-Analysis</a> repository.</p>
-<img alt="https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg" src="http://img.shields.io/badge/%E2%86%91_launch_dashboard_on-Heroku-7056bf.svg" />
-    <p><a href="../../../posts/Interactive_Dashboard/">Read more ...</a></p>
+<img alt="https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg" src="http://img.shields.io/badge/%E2%86%91_launch_dashboard_on-Heroku-7056bf.svg" /></div>
+
+    <p class="ablog-post-expand"><a href="../../../posts/2021/Interactive_Dashboard/"><em>Read more ...</em></a></p>
+    <hr />
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../../../posts/2021/jupyter-notebooks-faq/"
+        >Jupyter Notebooks Tutorial FAQ</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> 03 March 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../../author/julia-kent/">Julia Kent</a>  
+</li>
+    
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../python-tutorial-series/">python-tutorial-series</a>   
+  <a href="../faq/">faq</a>   
+  <a href="#">jupyter</a>  
+</li>
+ 
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>Here is a compilation of questions and issues that arose during the <a class="reference external" href="https://youtu.be/xSzXvwzFsDU">Jupyter Notebooks</a> session of the Python Tutorial Seminar Series.</p>
+<p><strong>Q.</strong> I installed Miniconda but it doesn’t seem to be working. <code class="docutils literal notranslate"><span class="pre">conda</span></code> is not a recognized command. What should I do?</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../../../posts/2021/jupyter-notebooks-faq/"><em>Read more ...</em></a></p>
     <hr />
   </div>
    
@@ -221,27 +481,33 @@
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
               
           </main>
           
 
       </div>
     </div>
-
-    
-  <script src="../../../_static/js/index.1e043a052b0af929e4d8.js"></script>
-
-
-    <footer class="footer mt-5 mt-md-0">
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
-    <p>
-          &copy; Copyright 2021, NCAR Earth System Data Science Team.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.3.<br/>
-    </p>
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, NCAR Earth System Data Science Team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
   </div>
 </footer>
   </body>
